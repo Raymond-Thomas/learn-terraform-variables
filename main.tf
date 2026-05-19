@@ -125,3 +125,13 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "terraform-aws-s3-bucket-rt" {
+  source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-bucket-rt/aws"
+  version = "1.1.0"
+
+  bucket_name = "rt-hcp-module-lab-338271634"
+}
+
+
+
